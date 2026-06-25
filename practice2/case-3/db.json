@@ -1,0 +1,176 @@
+{
+  "users": [
+    {
+      "id": "1753616996967pfyfqqpq0",
+      "username": "123",
+      "email": "123@321",
+      "password": "123",
+      "createdAt": "2025-07-27T11:49:56.967Z"
+    },
+    {
+      "id": "test_user_1",
+      "username": "Тест1",
+      "email": "test1@example.com",
+      "password": "123",
+      "createdAt": "2025-07-27T10:00:00.000Z"
+    },
+    {
+      "id": "test_user_2",
+      "username": "Тест2",
+      "email": "test2@example.com",
+      "password": "123",
+      "createdAt": "2025-07-27T10:15:00.000Z"
+    },
+    {
+      "id": "test_user_3",
+      "username": "Тест3",
+      "email": "test3@example.com",
+      "password": "123",
+      "createdAt": "2025-07-27T10:30:00.000Z"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1753617016681ijnvzv8mz",
+      "authorId": "1753616996967pfyfqqpq0",
+      "title": "Заголовок",
+      "content": "Содержание",
+      "tags": [
+        "Теги"
+      ],
+      "isPrivate": false,
+      "isRequestOnly": false,
+      "createdAt": "2025-07-27T11:50:16.681Z",
+      "updatedAt": "2025-07-27T11:50:16.681Z"
+    },
+    {
+      "id": "test_post_1",
+      "authorId": "test_user_1",
+      "title": "Тест1 - Публичный пост",
+      "content": "Тест1. Это публичный пост, доступный всем пользователям для чтения и комментирования.",
+      "tags": [
+        "тест",
+        "публичный",
+        "demo"
+      ],
+      "isPrivate": false,
+      "isRequestOnly": false,
+      "createdAt": "2025-07-27T09:00:00.000Z",
+      "updatedAt": "2025-07-27T09:00:00.000Z"
+    },
+    {
+      "id": "test_post_2",
+      "authorId": "test_user_2",
+      "title": "Тест2 - Приватный пост",
+      "content": "Тест2. Это приватный пост, доступный только автору для просмотра и редактирования.",
+      "tags": [
+        "тест",
+        "приватный",
+        "секрет"
+      ],
+      "isPrivate": true,
+      "isRequestOnly": false,
+      "createdAt": "2025-07-27T09:30:00.000Z",
+      "updatedAt": "2025-07-27T09:30:00.000Z"
+    },
+    {
+      "id": "test_post_3",
+      "authorId": "test_user_3",
+      "title": "Тест3 - Пост по запросу",
+      "content": "Тест3. Это пост по запросу - для просмотра нужно получить разрешение от автора.",
+      "tags": [
+        "тест",
+        "по-запросу",
+        "эксклюзив"
+      ],
+      "isPrivate": false,
+      "isRequestOnly": true,
+      "createdAt": "2025-07-27T10:00:00.000Z",
+      "updatedAt": "2025-07-27T10:00:00.000Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1753617048583kqjwjfnhl",
+      "postId": "1753617016681ijnvzv8mz",
+      "authorId": "1753616996967pfyfqqpq0",
+      "content": "123321 top",
+      "createdAt": "2025-07-27T11:50:48.583Z"
+    },
+    {
+      "id": "test_comment_1",
+      "postId": "test_post_1",
+      "authorId": "test_user_2",
+      "content": "Тест1",
+      "createdAt": "2025-07-27T09:15:00.000Z"
+    },
+    {
+      "id": "test_comment_2",
+      "postId": "test_post_1",
+      "authorId": "test_user_3",
+      "content": "Тест2.",
+      "createdAt": "2025-07-27T09:45:00.000Z"
+    },
+    {
+      "id": "test_comment_3",
+      "postId": "1753617016681ijnvzv8mz",
+      "authorId": "test_user_1",
+      "content": "Тест3",
+      "createdAt": "2025-07-27T12:00:00.000Z"
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": "test_sub_1",
+      "subscriberId": "1753616996967pfyfqqpq0",
+      "subscribedToId": "test_user_1",
+      "createdAt": "2025-07-27T12:15:00.000Z"
+    },
+    {
+      "id": "test_sub_2",
+      "subscriberId": "test_user_1",
+      "subscribedToId": "test_user_2",
+      "createdAt": "2025-07-27T10:45:00.000Z"
+    },
+    {
+      "id": "test_sub_3",
+      "subscriberId": "test_user_2",
+      "subscribedToId": "test_user_3",
+      "createdAt": "2025-07-27T11:00:00.000Z"
+    },
+    {
+      "id": "17536176092564xpba6tw1",
+      "followerId": "1753616996967pfyfqqpq0",
+      "followingId": "test_user_1",
+      "createdAt": "2025-07-27T12:00:09.256Z"
+    }
+  ],
+  "accessRequests": [
+    {
+      "id": "test_request_1",
+      "postId": "test_post_3",
+      "requesterId": "1753616996967pfyfqqpq0",
+      "status": "pending",
+      "message": "Тест1",
+      "createdAt": "2025-07-27T12:30:00.000Z"
+    },
+    {
+      "id": "test_request_2",
+      "postId": "test_post_3",
+      "requesterId": "test_user_1",
+      "status": "approved",
+      "message": "Тест2",
+      "createdAt": "2025-07-27T11:45:00.000Z",
+      "respondedAt": "2025-07-27T12:00:00.000Z"
+    },
+    {
+      "id": "test_request_3",
+      "postId": "test_post_3",
+      "requesterId": "test_user_2",
+      "status": "rejected",
+      "message": "Тест3",
+      "createdAt": "2025-07-27T11:30:00.000Z",
+      "respondedAt": "2025-07-27T11:50:00.000Z"
+    }
+  ]
+}

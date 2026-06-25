@@ -1,0 +1,328 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Мастер и Маргарита",
+      "author": "Михаил Булгаков",
+      "category": "Классическая литература",
+      "year": 1967,
+      "price": 850,
+      "rentalPrice": 150,
+      "description": "Знаменитый роман о дьяволе, посетившем Москву 1930-х годов",
+      "cover": "https://avatars.mds.yandex.net/get-mpic/4353087/img_id5213150955323603865.jpeg/optimize",
+      "available": true,
+      "inStock": 5,
+      "status": "available"
+    },
+    {
+      "id": "2",
+      "title": "Война и мир",
+      "author": "Лев Толстой",
+      "category": "Классическая литература",
+      "year": 1869,
+      "price": 1200,
+      "rentalPrice": 200,
+      "description": "Эпический роман-эпопея о русском обществе в эпоху наполеоновских войн",
+      "cover": "https://avatars.mds.yandex.net/get-mpic/4304169/img_id6552526528021082487.jpeg/optimize",
+      "available": false,
+      "inStock": 0,
+      "status": "discontinued"
+    },
+    {
+      "id": "3",
+      "title": "1984",
+      "author": "Джордж Оруэлл",
+      "category": "Научная фантастика",
+      "year": 1949,
+      "price": 750,
+      "rentalPrice": 120,
+      "description": "Антиутопический роман о тоталитарном обществе",
+      "cover": "https://avatars.mds.yandex.net/get-mpic/11442293/2a0000018ee6b35249608843243fab888d38/optimize",
+      "available": true,
+      "inStock": 5,
+      "status": "available"
+    },
+    {
+      "id": "4",
+      "title": "Преступление и наказание",
+      "author": "Фёдор Достоевский",
+      "category": "Классическая литература",
+      "year": 1866,
+      "price": 900,
+      "rentalPrice": 160,
+      "description": "Психологический роман о молодом человеке, совершившем убийство",
+      "cover": "https://avatars.mds.yandex.net/get-mpic/4932805/2a00000194a665dc3cc79d2e752847bf0e5e/optimize",
+      "available": true,
+      "inStock": 4,
+      "status": "available"
+    },
+    {
+      "id": "5",
+      "title": "Гарри Поттер и Философский камень",
+      "author": "Дж. К. Роулинг",
+      "category": "Фэнтези",
+      "year": 1997,
+      "price": 650,
+      "rentalPrice": 100,
+      "description": "Первая книга о юном волшебнике Гарри Поттере",
+      "cover": "https://avatars.mds.yandex.net/get-mpic/6219218/img_id3383235227468436655.jpeg/optimize",
+      "available": true,
+      "inStock": 10,
+      "status": "available"
+    },
+    {
+      "id": "6",
+      "title": "Властелин колец: Братство кольца",
+      "author": "Дж. Р. Р. Толкин",
+      "category": "Фэнтези",
+      "year": 1954,
+      "price": 800,
+      "rentalPrice": 140,
+      "description": "Эпическое фэнтези о походе за уничтожением Кольца Всевластья",
+      "cover": "https://avatars.mds.yandex.net/get-mpic/5395693/img_id6558900060172137998.jpeg/optimize",
+      "available": false,
+      "inStock": 0,
+      "status": "out_of_stock"
+    },
+    {
+      "id": "7",
+      "title": "Убить пересмешника",
+      "author": "Харпер Ли",
+      "category": "Современная литература",
+      "year": 1960,
+      "price": 700,
+      "rentalPrice": 130,
+      "description": "Роман о расовой несправедливости в американском Юге",
+      "cover": "https://avatars.mds.yandex.net/get-mpic/12444182/2a00000192a01fbc2e92a5eb1540ac637139/optimize",
+      "available": true,
+      "inStock": 6,
+      "status": "available"
+    },
+    {
+      "id": "8",
+      "title": "Сто лет одиночества",
+      "author": "Габриэль Гарсиа Маркес",
+      "category": "Магический реализм",
+      "year": 1967,
+      "price": 850,
+      "rentalPrice": 150,
+      "description": "Многопоколенческая сага семьи Буэндиа",
+      "cover": "https://avatars.mds.yandex.net/get-mpic/4399094/img_id5953666608085828501.jpeg/optimize",
+      "available": true,
+      "inStock": 2,
+      "status": "available"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin",
+      "email": "admin@bookstore.com",
+      "name": "Администратор"
+    },
+    {
+      "id": "2",
+      "username": "user",
+      "password": "user123",
+      "role": "user",
+      "email": "user@example.com",
+      "name": "Пользователь"
+    }
+  ],
+  "rentals": [
+    {
+      "id": "test-reminder",
+      "userId": 2,
+      "bookId": 1,
+      "startDate": "2025-07-25",
+      "endDate": "2025-07-29",
+      "duration": "twoWeeks",
+      "status": "active",
+      "reminderSent": true
+    },
+    {
+      "id": "b1b0",
+      "userId": 2,
+      "bookId": 3,
+      "startDate": "2025-07-27",
+      "endDate": "2025-07-28",
+      "duration": "twoWeeks",
+      "status": "active",
+      "reminderSent": true
+    },
+    {
+      "id": "4277",
+      "userId": 2,
+      "bookId": 3,
+      "startDate": "2025-07-27",
+      "endDate": "2025-07-30",
+      "duration": "month",
+      "status": "active",
+      "reminderSent": true
+    },
+    {
+      "id": "8aa6",
+      "userId": 2,
+      "bookId": 3,
+      "startDate": "2025-07-27",
+      "endDate": "2025-07-30",
+      "duration": "month",
+      "status": "active",
+      "reminderSent": true
+    },
+    {
+      "id": "f99b",
+      "userId": "2",
+      "bookId": "3",
+      "startDate": "2025-07-27",
+      "endDate": "2025-08-26",
+      "duration": "month",
+      "status": "active",
+      "reminderSent": false
+    },
+    {
+      "id": "ebf8",
+      "userId": "2",
+      "bookId": "6",
+      "startDate": "2025-07-27",
+      "endDate": "2025-08-26",
+      "duration": "month",
+      "status": "active",
+      "reminderSent": false
+    },
+    {
+      "id": "5487",
+      "userId": "2",
+      "bookId": "6",
+      "startDate": "2025-07-27",
+      "endDate": "2025-08-26",
+      "duration": "month",
+      "status": "active",
+      "reminderSent": false
+    }
+  ],
+  "purchases": [
+    {
+      "id": "be26",
+      "userId": 2,
+      "bookId": 3,
+      "date": "2025-07-27",
+      "price": 750
+    },
+    {
+      "id": "00d1",
+      "userId": 2,
+      "bookId": 2,
+      "date": "2025-07-27",
+      "price": 1200
+    },
+    {
+      "id": "6e42",
+      "userId": 2,
+      "bookId": 2,
+      "date": "2025-07-27",
+      "price": 1200
+    },
+    {
+      "id": "1a70",
+      "userId": 2,
+      "bookId": 2,
+      "date": "2025-07-27",
+      "price": 1200
+    },
+    {
+      "id": "d2bc",
+      "userId": 2,
+      "bookId": 5,
+      "date": "2025-07-27",
+      "price": 650
+    },
+    {
+      "id": "9c9c",
+      "userId": 2,
+      "bookId": 1,
+      "date": "2025-07-27",
+      "price": 850
+    },
+    {
+      "id": "6f7d",
+      "userId": 2,
+      "bookId": 7,
+      "date": "2025-07-27",
+      "price": 700
+    },
+    {
+      "id": "4fca",
+      "userId": 2,
+      "bookId": 3,
+      "date": "2025-07-27",
+      "price": 750
+    },
+    {
+      "id": "2049",
+      "userId": "2",
+      "bookId": "3",
+      "date": "2025-07-27",
+      "price": 750
+    },
+    {
+      "id": "0405",
+      "userId": "2",
+      "bookId": "3",
+      "date": "2025-07-27",
+      "price": 750
+    },
+    {
+      "id": "c032",
+      "userId": "2",
+      "bookId": "3",
+      "date": "2025-07-27",
+      "price": 750
+    },
+    {
+      "id": "a9c0",
+      "userId": "2",
+      "bookId": "3",
+      "date": "2025-07-27",
+      "price": 750
+    },
+    {
+      "id": "e333",
+      "userId": "2",
+      "bookId": "3",
+      "date": "2025-07-27",
+      "price": 750
+    },
+    {
+      "id": "e471",
+      "userId": "2",
+      "bookId": "3",
+      "date": "2025-07-27",
+      "price": 750
+    },
+    {
+      "id": "09f7",
+      "userId": "2",
+      "bookId": "6",
+      "date": "2025-07-27",
+      "price": 800
+    },
+    {
+      "userId": "2",
+      "bookId": "6",
+      "date": "2026-06-25",
+      "price": 800,
+      "id": "GykjsfHKg4I"
+    },
+    {
+      "userId": "2",
+      "bookId": "6",
+      "date": "2026-06-25",
+      "price": 800,
+      "id": "7A1DzUw44Hc"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
